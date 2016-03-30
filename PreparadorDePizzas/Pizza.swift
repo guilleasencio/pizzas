@@ -9,10 +9,10 @@
 import Foundation
 
 class Pizza {
-    var tamaño: String? = nil
-    var masa: String? = nil
-    var queso: String? = nil
-    var ingredientes: [String]? = nil
+    var tamaño: String = "chica"
+    var masa: String = "delgada"
+    var queso: String = "mozarela"
+    var ingredientes: [String] = []
     
     let tamañosDisponibles : [String] = ["chica","mediana","grande"]
     let masasDisponibles : [String] = ["delgada","crujiente","gruesa"]
@@ -34,23 +34,53 @@ class Pizza {
         return ingredientesDisponibles
     }
     
-    func cambiarTamaño(tamaño: String?) {
+    func cambiarTamaño(tamaño: String) {
         self.tamaño = tamaño
     }
-    func cambiarMasa(masa: String?) {
+    func cambiarMasa(masa: String) {
         self.masa = masa
     }
-    func cambiarQueso(queso: String?) {
+    func cambiarQueso(queso: String) {
         self.queso = queso
     }
     
+    func verTamaño() -> String {
+        return self.tamaño
+    }
+    
+    func verMasa() -> String {
+        return self.masa
+    }
+    
+    func verQueso() -> String {
+        return self.queso
+    }
+    
+    func verIngredientes() -> [String] {
+        return self.ingredientes
+    }
+    
+    // función para saber si una pizza tiene o no un ingrediente
+    func tieneIngrediente(ingrediente: String) -> Bool {
+        if self.ingredientes.indexOf(ingrediente) != nil {
+            return true
+        }else{
+            return false
+        }
+
+    }
+    
     func añadirIngrediente(ingrediente: String) {
-        self.ingredientes?.append(ingrediente)
+        self.ingredientes.append(ingrediente)
     }
     
     func quitarIngrediente(ingrediente: String) {
-        if let index = self.ingredientes?.indexOf(ingrediente) {
-            self.ingredientes?.removeAtIndex(index)
+        if let index = self.ingredientes.indexOf(ingrediente) {
+            self.ingredientes.removeAtIndex(index)
         }
+    }
+    
+    func totalIngredientes() -> Int {
+        return self.ingredientes.count
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F54C17F1CAC3A2C0061A93B /* ConfirmarPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54C17E1CAC3A2C0061A93B /* ConfirmarPizza.swift */; };
 		3FA297881CAB44B4004D4D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297871CAB44B4004D4D92 /* AppDelegate.swift */; };
 		3FA2978A1CAB44B4004D4D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297891CAB44B4004D4D92 /* ViewController.swift */; };
 		3FA2978D1CAB44B4004D4D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2978B1CAB44B4004D4D92 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F54C17E1CAC3A2C0061A93B /* ConfirmarPizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmarPizza.swift; sourceTree = "<group>"; };
 		3FA297841CAB44B4004D4D92 /* PreparadorDePizzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreparadorDePizzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA297871CAB44B4004D4D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA297891CAB44B4004D4D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				3FA2979D1CAB4DD8004D4D92 /* MasaDePizza.swift */,
 				3FA2979F1CAB55B1004D4D92 /* QuesoDePizza.swift */,
 				3FA297A11CAB58E2004D4D92 /* IngredientesDePizza.swift */,
+				3F54C17E1CAC3A2C0061A93B /* ConfirmarPizza.swift */,
 			);
 			path = PreparadorDePizzas;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				3FA2979C1CAB46D7004D4D92 /* TamanoDePizza.swift in Sources */,
 				3FA297A01CAB55B1004D4D92 /* QuesoDePizza.swift in Sources */,
 				3FA297881CAB44B4004D4D92 /* AppDelegate.swift in Sources */,
+				3F54C17F1CAC3A2C0061A93B /* ConfirmarPizza.swift in Sources */,
 				3FA2979A1CAB45D7004D4D92 /* Pizza.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +313,7 @@
 				3FA297981CAB44B4004D4D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,12 +11,21 @@ import UIKit
 class QuesoDePizza: UIViewController {
     
     var pizza : Pizza = Pizza()
-    var quesoActual : String? = nil
+    var quesoActual : String = ""
 
+    @IBOutlet weak var quesoPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let quesoSeleccionado = self.pizza.verQueso()
+        let quesosDisponibles: [String] = self.pizza.quesosParaPizza()
+        let indice: Int = quesosDisponibles.indexOf(quesoSeleccionado)!
+        self.quesoPicker.selectRow(indice, inComponent: 0, animated: false)
     }
 
     override func didReceiveMemoryWarning() {

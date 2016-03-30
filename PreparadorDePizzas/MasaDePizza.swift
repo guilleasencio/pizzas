@@ -11,12 +11,20 @@ import UIKit
 class MasaDePizza: UIViewController {
     
     var pizza : Pizza = Pizza()
-    var masaActual : String? = nil
+    var masaActual : String = ""
 
+    @IBOutlet weak var masaPicker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let masaSeleccionada = self.pizza.verMasa()
+        let masasDisponibles: [String] = self.pizza.masasParaPizza()
+        let indice: Int = masasDisponibles.indexOf(masaSeleccionada)!
+        self.masaPicker.selectRow(indice, inComponent: 0, animated: false)
     }
 
     override func didReceiveMemoryWarning() {

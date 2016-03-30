@@ -11,12 +11,20 @@ import UIKit
 class TamanoDePizza: UIViewController {
     
     var pizza : Pizza = Pizza()
-    var tamañoActual : String? = nil
+    var tamañoActual : String = ""
+    @IBOutlet weak var tamañoPicker: UIPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        let tamañoSeleccionado = self.pizza.verTamaño()
+        let tamañosDisponibles: [String] = self.pizza.tamañosParaPizza()
+        let indice: Int = tamañosDisponibles.indexOf(tamañoSeleccionado)!
+        self.tamañoPicker.selectRow(indice, inComponent: 0, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +37,7 @@ class TamanoDePizza: UIViewController {
         return 1
     }
     
+   
     
     // Funcion requerida para en la utilización de UIPickerViewDataSource: indica el numero de filas que contendrá un componente específico del Picker View
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -40,6 +49,8 @@ class TamanoDePizza: UIViewController {
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         let tamaños : [String] = pizza.tamañosParaPizza()
         tamañoActual = tamaños[row]
+        
+        
         return tamaños[row]
     }
     
