@@ -12,6 +12,11 @@
 		3FA2978D1CAB44B4004D4D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2978B1CAB44B4004D4D92 /* Main.storyboard */; };
 		3FA2978F1CAB44B4004D4D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2978E1CAB44B4004D4D92 /* Assets.xcassets */; };
 		3FA297921CAB44B4004D4D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA297901CAB44B4004D4D92 /* LaunchScreen.storyboard */; };
+		3FA2979A1CAB45D7004D4D92 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297991CAB45D7004D4D92 /* Pizza.swift */; };
+		3FA2979C1CAB46D7004D4D92 /* TamanoDePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2979B1CAB46D7004D4D92 /* TamanoDePizza.swift */; };
+		3FA2979E1CAB4DD8004D4D92 /* MasaDePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2979D1CAB4DD8004D4D92 /* MasaDePizza.swift */; };
+		3FA297A01CAB55B1004D4D92 /* QuesoDePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2979F1CAB55B1004D4D92 /* QuesoDePizza.swift */; };
+		3FA297A21CAB58E2004D4D92 /* IngredientesDePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297A11CAB58E2004D4D92 /* IngredientesDePizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		3FA2978E1CAB44B4004D4D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA297911CAB44B4004D4D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA297931CAB44B4004D4D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA297991CAB45D7004D4D92 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		3FA2979B1CAB46D7004D4D92 /* TamanoDePizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanoDePizza.swift; sourceTree = "<group>"; };
+		3FA2979D1CAB4DD8004D4D92 /* MasaDePizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaDePizza.swift; sourceTree = "<group>"; };
+		3FA2979F1CAB55B1004D4D92 /* QuesoDePizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoDePizza.swift; sourceTree = "<group>"; };
+		3FA297A11CAB58E2004D4D92 /* IngredientesDePizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesDePizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				3FA2978E1CAB44B4004D4D92 /* Assets.xcassets */,
 				3FA297901CAB44B4004D4D92 /* LaunchScreen.storyboard */,
 				3FA297931CAB44B4004D4D92 /* Info.plist */,
+				3FA297991CAB45D7004D4D92 /* Pizza.swift */,
+				3FA2979B1CAB46D7004D4D92 /* TamanoDePizza.swift */,
+				3FA2979D1CAB4DD8004D4D92 /* MasaDePizza.swift */,
+				3FA2979F1CAB55B1004D4D92 /* QuesoDePizza.swift */,
+				3FA297A11CAB58E2004D4D92 /* IngredientesDePizza.swift */,
 			);
 			path = PreparadorDePizzas;
 			sourceTree = "<group>";
@@ -136,8 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA2979E1CAB4DD8004D4D92 /* MasaDePizza.swift in Sources */,
 				3FA2978A1CAB44B4004D4D92 /* ViewController.swift in Sources */,
+				3FA297A21CAB58E2004D4D92 /* IngredientesDePizza.swift in Sources */,
+				3FA2979C1CAB46D7004D4D92 /* TamanoDePizza.swift in Sources */,
+				3FA297A01CAB55B1004D4D92 /* QuesoDePizza.swift in Sources */,
 				3FA297881CAB44B4004D4D92 /* AppDelegate.swift in Sources */,
+				3FA2979A1CAB45D7004D4D92 /* Pizza.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
